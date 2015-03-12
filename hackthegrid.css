@@ -9,6 +9,7 @@ nav {
 	font-family:"Franklin Gothic Book";
 	margin-left:auto;
 	margin-right:auto;
+	margin-bottom:auto;
 	font-size:4.5vw;
 }
 
@@ -20,11 +21,6 @@ nav {
 	width:8%;
 	margin:1%;
 	height:8%;
-}
-.header .container .nav_menu .menu {
-	display: inline-block;
-	padding:2%;
-
 }
 .header a {
 	text-align:center;
@@ -64,7 +60,7 @@ nav a:active {
 	margin-top:3%;
 	background-color:rgba(255,255,255,0.7);
 	padding:2%;
-	/*font-family:"Calibri",serif; */
+	font-family:"Calibri",serif;
 	margin-left:auto;
 	margin-right:auto;
 	font-size:3vw;
@@ -81,17 +77,106 @@ nav a:active {
 	padding:0;
         background: #e1e1e1;
 }
-/*
-.actions .container .icon a {
-	text-decoration:blink;
-	color:rgba(0,0,0,0.7); 
-}
-.actions .icon a:hover {
-	color:rgba(0,0,0,0.4); 	
-}
-.actions .icon a:active {
-	color:rgba(0,0,0,1);
-}
-*/
 
+/* ANIMATION CODE */
+.hvr-shutter-in-horizontal {
+  width: 100%;
+  height: 100%; 
+  display: inline-block;
+  font-size: 1em;
+  color:rgba(0,0,0,0.7); 
+  text-decoration: blink;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  position: relative;
+  background: #2098d1;
+  transition-property: color;
+  transition-duration: 0.3s;
+}
+.hvr-shutter-in-horizontal:before {
+  width: 100%;
+  height: 100%;
+  content: ""; 	
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #e1e1e1;
+  transform: scaleX(1);
+  transform-origin: 50%;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+.hvr-shutter-in-horizontal:hover, .hvr-shutter-in-horizontal:focus, .hvr-shutter-in-horizontal:active {
+  color: white;
+}
+.hvr-shutter-in-horizontal:hover:before, .hvr-shutter-in-horizontal:focus:before, .hvr-shutter-in-horizontal:active:before {
+  transform: scaleX(0);
+}
 
+.hvr-grow {
+  padding:2%;
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  transition-duration: 0.5s;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active{
+  transform: scale(1.1);
+}
+
+/* ANIMATION CODE */
+.anim 
+{
+    width:100%;
+    height:10px;
+    background: red;
+    border-radius: 7px;
+    -webkit-animation-name: myfirst;
+    -webkit-animation-duration: 7s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+}
+
+@-webkit-keyframes myfirst {
+    0%   {background:red; left:0px; top:0px;}
+    25%  {background:yellow; left:200px; top:0px;}
+   50%  {background:blue; left:200px; top:200px;}
+    75%  {background:green; left:0px; top:200px;}
+    100% {background:red; left:0px; top:0px;}
+}
+
+.reg_form {
+  color:#fffff1;
+  background-color: rgba(0,0,0,0.8);
+  max-width:70%;
+  padding:2%;
+  margin-left: auto;
+  margin-right: auto;
+  border: double 3px;
+  border-radius: 5px;
+  text-align: left;
+}
+.reg_form .ip {
+  margin: 0 1% 2% 0;
+  display: block;
+  padding:1%;
+}
+label {
+  font-weight: bold;
+  font-family: Calibri;
+}
+input, textarea {
+  border-radius:5px;
+  padding:1%;
+  border:0.2px solid ;
+}
