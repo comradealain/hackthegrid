@@ -24,39 +24,41 @@
     <body>
         <div class="anim"></div>
         <div class="header">
-                <nav class="nav_menu">
-                    <div class="hvr-grow"><a href="index.html">Home</a></div>
-                    <div class="hvr-grow"><a href="#">Explore</a></div>
-                    <div class="hvr-grow"><a href="#">About</a></div>
-                </nav>
+            <nav class="nav_menu">
+                <div class="hvr-grow"><a href="index.html">Home</a></div>
+                <div class="hvr-grow"><a href="explore.html">Explore</a></div>
+                <div class="hvr-grow"><a href="about.html">About</a></div>
+            </nav>
         </div>
         <div class="anim" ></div>
         <div class="reg_form">
-            <h2 style="text-align:center;font-size:3em;font-family:Calibri;">REGISTER</h2>
+            <h2 style="text-align:left;font-size:3em;font-family:Calibri;">REGISTER</h2>
             <form action="#" method='POST' enctype="text/plain" autocomplete="on">
                 <ul>
                     <li><label>First Name : </label><input type='text' name='Name' placeholder='First Name' autofocus required> </li>
                     <li><label>Last Name : </label><input type='text' name='Name' placeholder='Last Name'></li>
                     <li><label>Gender : </label><input type="radio" name="sex" value="male">Male
-                <input type="radio" name="sex" value="female">Female</li>
-                <li><label>Region : </label><select>
-                    <option value="Asia Pacific">Asia Pacific</option>
-                    <option value="United States">United States</option>
-                    <option value="Europe">Europe</option>
-                    <option value="North Asia">North Asia</option>
-                    <option value="Australia">Australia</option>
-                </select></li>
-                <li><label>User Name : </label><input type='text' name='Name' placeholder='User Name'  autocomplete required></li>
-                <li><label>Email : </label><input autocomplete="off" type='email' name='Name' placeholder='Email' multiple required></li>
-                <li><label>New Password : </label><input type='text' name='Name' placeholder='Password' pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required></li>
-                <li><label>Confirm Password : </label><input type='text' name='Name' placeholder='Confirm' required></li>
-                
-                <li><div class="icon">
-                            <a href="#" class="hvr-shutter-in-horizontal-red">Submit</a>
-                        </div></li>
+                        <input type="radio" name="sex" value="female">Female</li>
+                    <li><label>Region : </label><select>
+                            <option value="Asia Pacific">Asia Pacific</option>
+                            <option value="United States">United States</option>
+                            <option value="Europe">Europe</option>
+                            <option value="North Asia">North Asia</option>
+                            <option value="Australia">Australia</option>
+                        </select></li>
+                    <li><label>User Name : </label><input type='text' name='Name' placeholder='User Name'  autocomplete required></li>
+                    <li><label>Email : </label><input autocomplete="off" type='email' name='Name' placeholder='Email' multiple required></li>
+                    <li><label>New Password : </label><input type='text' name='Name' placeholder='Password' pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required></li>
+                    <li><label>Confirm Password : </label><input type='text' name='Name' placeholder='Confirm' required></li>
                 </ul>
             </form>
+
+            <div class="icon">
+                <a href="#" class="hvr-shutter-in-horizontal-red">Submit</a>
+            </div>
+            <div class="icon">
+                <a href="login.html" class="hvr-shutter-in-horizontal-blue">Back</a>
+            </div>
         </div>
-        <br>
     </body>
 </html>
